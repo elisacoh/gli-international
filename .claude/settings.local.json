@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:bear-kangaroo-frnr.squarespace.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "home": {
+    "title": "Medical Formation Platform",
+    "description": "Professional training courses for dentists and doctors",
+    "features": {
+      "formations": "Certified Formations",
+      "formations_desc": "Access quality training courses taught by experts",
+      "experts": "Recognized Experts",
+      "experts_desc": "Learn from experienced professionals in their field",
+      "certificate": "Certification",
+      "certificate_desc": "Obtain recognized certificates upon completion of your training"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "formations": "Formations",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "profile": "Profile",
+    "admin": "Admin",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "email": "Email address",
+      "password": "Password",
+      "submit": "Sign in",
+      "or": "Or continue with",
+      "google": "Google",
+      "apple": "Apple",
+      "no_account": "Don't have an account?",
+      "register": "Register"
+    },
+    "register": {
+      "title": "Create an account",
+      "full_name": "Full name",
+      "email": "Email address",
+      "password": "Password",
+      "confirm_password": "Confirm password",
+      "submit": "Create account",
+      "have_account": "Already have an account?",
+      "login": "Sign in"
+    }
+  },
+  "formations": {
+    "title": "Our Seminars",
+    "subtitle": "Discover our excellence training programs in the most beautiful destinations worldwide",
+    "searchPlaceholder": "Search for a destination...",
+    "allDates": "All dates",
+    "filterAll": "All",
+    "filterPopular": "Most Popular",
+    "filterFeatured": "Featured",
+    "resultsFound": "seminars found",
+    "noResults": "No seminars found",
+    "from": "From",
+    "featured": "Featured",
+    "popular": "Popular",
+    "search": "Search for a formation",
+    "filters": {
+      "all": "All",
+      "category": "Category",
+      "level": "Level",
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "details": {
+      "duration": "Duration",
+      "level": "Level",
+      "price": "Price",
+      "enroll": "Enroll",
+      "description": "Description",
+      "curriculum": "Curriculum"
+    }
+  },
+  "seminarDetail": {
+    "notFound": "Seminar not found",
+    "back": "Back",
+    "date": "Date",
+    "duration": "Duration",
+    "description": "Description",
+    "program": "Program",
+    "included": "Included in the seminar",
+    "pricePerPerson": "Price per person",
+    "participants": "Number of participants",
+    "total": "Total",
+    "continue": "Continue",
+    "noPaymentYet": "No payment will be made at this stage"
+  },
+  "checkout": {
+    "notFound": "Seminar not found",
+    "back": "Back",
+    "title": "Confirmation and payment",
+    "contactInformation": "Contact information",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "postalCode": "Postal code",
+    "country": "Country",
+    "participantsInformation": "Participants information",
+    "participant": "Participant",
+    "paymentMethod": "Payment method",
+    "acceptTerms": "I accept the",
+    "termsAndConditions": "terms and conditions",
+    "mustAcceptTerms": "You must accept the terms and conditions",
+    "paymentNotImplemented": "Payment will be implemented soon",
+    "orderSummary": "Order summary",
+    "pricePerPerson": "Price per person",
+    "participants": "Participants",
+    "subtotal": "Subtotal",
+    "tax": "VAT (20%)",
+    "total": "Total",
+    "proceedToPayment": "Proceed to payment",
+    "securePayment": "100% secure payment"
+  },
+  "admin": {
+    "title": "Administration",
+    "formations": {
+      "title": "Formation Management",
+      "add": "Add formation",
+      "edit": "Edit",
+      "delete": "Delete",
+      "publish": "Publish",
+      "unpublish": "Unpublish"
+    },
+    "users": {
+      "title": "User Management",
+      "role": "Role",
+      "status": "Status"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Operation successful"
+  }
+}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 font-light antialiased;
+    background-color: rgb(231, 227, 216);
+    cursor: default;
+  }
+
+  * {
+    cursor: inherit;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-light tracking-wide;
+  }
+}

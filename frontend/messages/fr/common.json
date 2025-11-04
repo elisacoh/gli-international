@@ -1,0 +1,169 @@
+{
+  "home": {
+    "hero": {
+      "title": "Excellence en Formation Médicale Internationale",
+      "subtitle": "Formations d'excellence pour les professionnels dentaires et médicaux du monde entier",
+      "cta": "Découvrir nos formations"
+    },
+    "about": {
+    "title": "À Propos de GLI International",
+    "description": "<strong>GLI International</strong> organise des séminaires d’exception <strong>partout dans le monde</strong> pour les <strong>professionnels de santé</strong>, les <strong>avocats</strong> et les <strong>entrepreneurs</strong>.",
+    "description2": "Animés par des experts certifiés, nos séminaires allient apprentissage, développement professionnel et plaisir, en <strong>transformant vos voyages personnels en véritables formations enrichissantes</strong>.",
+    "description3": "Nous proposons régulièrement des sessions dans les <strong>plus belles destinations de vacances</strong>, et concevons également des <strong>séminaires sur mesure, partout dans le monde</strong>."
+    },
+    "formations": {
+      "title": "Nos Formations",
+      "subtitle": "Découvrez notre sélection de formations d'excellence",
+      "view_all": "Voir toutes les formations"
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "subtitle": "Une question ? Nous sommes là pour vous aider",
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "message": "Votre message",
+      "send": "Envoyer",
+      "success": "Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais."
+    },
+    "stats": {
+      "formations": "Formations",
+      "students": "Étudiants",
+      "countries": "Pays",
+      "satisfaction": "Satisfaction"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "formations": "Formations",
+    "about": "À propos",
+    "contact": "Contact",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "profile": "Profil",
+    "admin": "Administration",
+    "logout": "Déconnexion"
+  },
+  "auth": {
+    "login": {
+      "title": "Connexion",
+      "email": "Adresse e-mail",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "or": "Ou continuer avec",
+      "google": "Google",
+      "apple": "Apple",
+      "no_account": "Pas de compte ?",
+      "register": "S'inscrire"
+    },
+    "register": {
+      "title": "Créer un compte",
+      "full_name": "Nom complet",
+      "email": "Adresse e-mail",
+      "password": "Mot de passe",
+      "confirm_password": "Confirmer le mot de passe",
+      "submit": "Créer mon compte",
+      "have_account": "Déjà un compte ?",
+      "login": "Se connecter"
+    }
+  },
+  "formations": {
+    "title": "Nos Séminaires",
+    "subtitle": "Découvrez nos formations d'excellence dans les plus belles destinations du monde",
+    "searchPlaceholder": "Rechercher une destination...",
+    "allDates": "Toutes les dates",
+    "filterAll": "Tous",
+    "filterPopular": "Les plus populaires",
+    "filterFeatured": "À la une",
+    "resultsFound": "séminaires trouvés",
+    "noResults": "Aucun séminaire trouvé",
+    "from": "À partir de",
+    "featured": "À la une",
+    "popular": "Populaire",
+    "search": "Rechercher une formation",
+    "filters": {
+      "all": "Toutes",
+      "category": "Catégorie",
+      "level": "Niveau",
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé"
+    },
+    "details": {
+      "duration": "Durée",
+      "level": "Niveau",
+      "price": "Prix",
+      "enroll": "S'inscrire",
+      "description": "Description",
+      "curriculum": "Programme"
+    }
+  },
+  "seminarDetail": {
+    "notFound": "Séminaire non trouvé",
+    "back": "Retour",
+    "date": "Date",
+    "duration": "Durée",
+    "description": "Description",
+    "program": "Programme",
+    "included": "Inclus dans le séminaire",
+    "pricePerPerson": "Prix par personne",
+    "participants": "Nombre de participants",
+    "total": "Total",
+    "continue": "Continuer",
+    "noPaymentYet": "Aucun paiement ne sera effectué à cette étape"
+  },
+  "checkout": {
+    "notFound": "Séminaire non trouvé",
+    "back": "Retour",
+    "title": "Confirmation et paiement",
+    "contactInformation": "Informations de contact",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "city": "Ville",
+    "postalCode": "Code postal",
+    "country": "Pays",
+    "participantsInformation": "Informations des participants",
+    "participant": "Participant",
+    "paymentMethod": "Méthode de paiement",
+    "acceptTerms": "J'accepte les",
+    "termsAndConditions": "conditions générales de vente",
+    "mustAcceptTerms": "Vous devez accepter les conditions générales",
+    "paymentNotImplemented": "Le paiement sera implémenté prochainement",
+    "orderSummary": "Récapitulatif",
+    "pricePerPerson": "Prix par personne",
+    "participants": "Participants",
+    "subtotal": "Sous-total",
+    "tax": "TVA (20%)",
+    "total": "Total",
+    "proceedToPayment": "Procéder au paiement",
+    "securePayment": "Paiement 100% sécurisé"
+  },
+  "admin": {
+    "title": "Administration",
+    "formations": {
+      "title": "Gestion des Formations",
+      "add": "Ajouter une formation",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "publish": "Publier",
+      "unpublish": "Dépublier"
+    },
+    "users": {
+      "title": "Gestion des Utilisateurs",
+      "role": "Rôle",
+      "status": "Statut"
+    }
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "back": "Retour",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "success": "Opération réussie"
+  }
+}

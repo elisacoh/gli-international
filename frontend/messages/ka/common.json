@@ -1,0 +1,148 @@
+{
+  "home": {
+    "title": "სამედიცინო საგანმანათლებლო პლატფორმა",
+    "description": "პროფესიული სასწავლო კურსები სტომატოლოგებისა და ექიმებისთვის",
+    "features": {
+      "formations": "სერტიფიცირებული ტრენინგები",
+      "formations_desc": "მიიღეთ წვდომა ხარისხიან სასწავლო კურსებზე ექსპერტებისგან",
+      "experts": "აღიარებული ექსპერტები",
+      "experts_desc": "ისწავლეთ გამოცდილი პროფესიონალებისგან",
+      "certificate": "სერტიფიკაცია",
+      "certificate_desc": "მიიღეთ აღიარებული სერტიფიკატი ტრენინგის დასრულების შემდეგ"
+    }
+  },
+  "nav": {
+    "home": "მთავარი",
+    "formations": "ტრენინგები",
+    "about": "ჩვენ შესახებ",
+    "contact": "კონტაქტი",
+    "login": "შესვლა",
+    "register": "რეგისტრაცია",
+    "profile": "პროფილი",
+    "admin": "ადმინი",
+    "logout": "გასვლა"
+  },
+  "auth": {
+    "login": {
+      "title": "შესვლა",
+      "email": "ელ. ფოსტა",
+      "password": "პაროლი",
+      "submit": "შესვლა",
+      "or": "ან გააგრძელეთ",
+      "google": "Google",
+      "apple": "Apple",
+      "no_account": "არ გაქვთ ანგარიში?",
+      "register": "რეგისტრაცია"
+    },
+    "register": {
+      "title": "ანგარიშის შექმნა",
+      "full_name": "სრული სახელი",
+      "email": "ელ. ფოსტა",
+      "password": "პაროლი",
+      "confirm_password": "გაიმეორეთ პაროლი",
+      "submit": "ანგარიშის შექმნა",
+      "have_account": "უკვე გაქვთ ანგარიში?",
+      "login": "შესვლა"
+    }
+  },
+  "formations": {
+    "title": "ჩვენი სემინარები",
+    "subtitle": "აღმოაჩინეთ ჩვენი საუკეთესო საგანმანათლებლო პროგრამები მსოფლიოს ულამაზეს ადგილებში",
+    "searchPlaceholder": "მიმართულების ძიება...",
+    "allDates": "ყველა თარიღი",
+    "filterAll": "ყველა",
+    "filterPopular": "ყველაზე პოპულარული",
+    "filterFeatured": "გამორჩეული",
+    "resultsFound": "სემინარი ნაპოვნია",
+    "noResults": "სემინარი არ მოიძებნა",
+    "from": "დან",
+    "featured": "გამორჩეული",
+    "popular": "პოპულარული",
+    "search": "ტრენინგის ძიება",
+    "filters": {
+      "all": "ყველა",
+      "category": "კატეგორია",
+      "level": "დონე",
+      "beginner": "დამწყები",
+      "intermediate": "საშუალო",
+      "advanced": "მოწინავე"
+    },
+    "details": {
+      "duration": "ხანგრძლივობა",
+      "level": "დონე",
+      "price": "ფასი",
+      "enroll": "ჩაწერა",
+      "description": "აღწერა",
+      "curriculum": "პროგრამა"
+    }
+  },
+  "seminarDetail": {
+    "notFound": "სემინარი ვერ მოიძებნა",
+    "back": "უკან",
+    "date": "თარიღი",
+    "duration": "ხანგრძლივობა",
+    "description": "აღწერა",
+    "program": "პროგრამა",
+    "included": "სემინარში შედის",
+    "pricePerPerson": "ფასი პიროვნებაზე",
+    "participants": "მონაწილეთა რაოდენობა",
+    "total": "სულ",
+    "continue": "გაგრძელება",
+    "noPaymentYet": "ამ ეტაპზე გადახდა არ განხორციელდება"
+  },
+  "checkout": {
+    "notFound": "სემინარი ვერ მოიძებნა",
+    "back": "უკან",
+    "title": "დადასტურება და გადახდა",
+    "contactInformation": "საკონტაქტო ინფორმაცია",
+    "firstName": "სახელი",
+    "lastName": "გვარი",
+    "email": "ელ. ფოსტა",
+    "phone": "ტელეფონი",
+    "address": "მისამართი",
+    "city": "ქალაქი",
+    "postalCode": "საფოსტო კოდი",
+    "country": "ქვეყანა",
+    "participantsInformation": "მონაწილეთა ინფორმაცია",
+    "participant": "მონაწილე",
+    "paymentMethod": "გადახდის მეთოდი",
+    "acceptTerms": "ვეთანხმები",
+    "termsAndConditions": "წესებსა და პირობებს",
+    "mustAcceptTerms": "თქვენ უნდა დაეთანხმოთ წესებსა და პირობებს",
+    "paymentNotImplemented": "გადახდა მალე დაინერგება",
+    "orderSummary": "შეკვეთის შეჯამება",
+    "pricePerPerson": "ფასი პიროვნებაზე",
+    "participants": "მონაწილეები",
+    "subtotal": "შუალედური თანხა",
+    "tax": "დღგ (20%)",
+    "total": "სულ",
+    "proceedToPayment": "გადახდაზე გადასვლა",
+    "securePayment": "100% დაცული გადახდა"
+  },
+  "admin": {
+    "title": "ადმინისტრირება",
+    "formations": {
+      "title": "ტრენინგების მართვა",
+      "add": "ტრენინგის დამატება",
+      "edit": "რედაქტირება",
+      "delete": "წაშლა",
+      "publish": "გამოქვეყნება",
+      "unpublish": "გამოქვეყნების გაუქმება"
+    },
+    "users": {
+      "title": "მომხმარებლების მართვა",
+      "role": "როლი",
+      "status": "სტატუსი"
+    }
+  },
+  "common": {
+    "save": "შენახვა",
+    "cancel": "გაუქმება",
+    "delete": "წაშლა",
+    "edit": "რედაქტირება",
+    "back": "უკან",
+    "loading": "იტვირთება...",
+    "error": "დაფიქსირდა შეცდომა",
+    "success": "ოპერაცია წარმატებით დასრულდა"
+  }
+}
