@@ -25,10 +25,10 @@ export default function FormationCard({ formation, delay = 0 }: FormationCardPro
       key={formation.id}
       href={`/${locale}/formations/${formation.id}`}
       className="group"
-      ref={ref}
     >
-      {/* Image */}
-      <div className="relative h-64 md:h-72 lg:h-80 overflow-hidden mb-4 md:mb-6">
+      <div ref={ref}>
+        {/* Image */}
+        <div className="relative h-64 md:h-72 lg:h-80 overflow-hidden mb-4 md:mb-6">
         <img
           src={formation.image}
           alt={formation.title}
@@ -52,6 +52,7 @@ export default function FormationCard({ formation, delay = 0 }: FormationCardPro
         <p className="text-xs md:text-sm text-gray-400 font-light">
           {formation.date}
         </p>
+      </div>
       </div>
     </Link>
   );
