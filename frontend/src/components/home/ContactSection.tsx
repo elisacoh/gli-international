@@ -39,21 +39,21 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="min-h-screen snap-start flex items-center py-16 md:py-24" style={{backgroundColor: 'rgb(231, 227, 216)'}}>
-      <div className="w-full px-4 md:px-8 lg:px-16">
+    <section className="min-h-screen snap-start flex items-center py-20 md:py-24" style={{backgroundColor: 'rgb(231, 227, 216)'}}>
+      <div className="w-full px-6 md:px-8 lg:px-16">
         {/* Section Header */}
-        <div className="mb-12 md:mb-16 lg:mb-20 max-w-3xl">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 leading-tight tracking-wide mb-4 md:mb-6">
+        <div className="mb-14 md:mb-16 lg:mb-20 max-w-4xl">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-tight tracking-wide mb-5 md:mb-6">
             {t('title')}
           </h2>
-          <p className="text-sm md:text-base lg:text-lg text-gray-600 font-light">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 font-light">
             {t('subtitle')}
           </p>
         </div>
 
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
+          <form onSubmit={handleSubmit} className="space-y-7 md:space-y-8">
             <div>
               <input
                 type="text"
@@ -62,7 +62,7 @@ export default function ContactSection() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-0 py-3 md:py-4 border-0 border-b border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light text-sm md:text-base"
+                className="w-full px-0 py-4 md:py-5 border-0 border-b-2 border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light text-base md:text-lg"
                 placeholder="Nom complet"
               />
             </div>
@@ -75,7 +75,7 @@ export default function ContactSection() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-0 py-3 md:py-4 border-0 border-b border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light text-sm md:text-base"
+                className="w-full px-0 py-4 md:py-5 border-0 border-b-2 border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light text-base md:text-lg"
                 placeholder="Email"
               />
             </div>
@@ -88,21 +88,23 @@ export default function ContactSection() {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="w-full px-0 py-3 md:py-4 border-0 border-b border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light resize-none text-sm md:text-base"
+                className="w-full px-0 py-4 md:py-5 border-0 border-b-2 border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light resize-none text-base md:text-lg"
                 placeholder="Message"
               />
             </div>
 
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="border border-gray-900 text-gray-900 px-8 md:px-10 py-3 md:py-4 text-xs md:text-sm font-light tracking-widest uppercase hover:bg-gray-900 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isSubmitting ? 'Envoi...' : t('send')}
-            </button>
+            <div className="pt-4">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="border-2 border-gray-900 text-gray-900 px-8 sm:px-10 md:px-12 py-4 md:py-5 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-gray-900 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? 'Envoi...' : t('send')}
+              </button>
+            </div>
 
             {submitSuccess && (
-              <div className="text-green-700 font-light text-sm md:text-base">
+              <div className="text-green-700 font-light text-base md:text-lg">
                 {t('success')}
               </div>
             )}

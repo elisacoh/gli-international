@@ -36,20 +36,20 @@ export default function FormationsSection() {
   ];
 
   return (
-    <section className="min-h-screen snap-start flex items-center py-16 md:py-24" style={{backgroundColor: 'rgb(231, 227, 216)'}}>
-      <div className="w-full px-4 md:px-8 lg:px-16">
+    <section className="min-h-screen snap-start flex items-center py-20 md:py-24" style={{backgroundColor: 'rgb(231, 227, 216)'}}>
+      <div className="w-full px-6 md:px-8 lg:px-16">
         {/* Section Header */}
-        <div className="mb-12 md:mb-16 lg:mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 leading-tight tracking-wide mb-4 md:mb-6">
+        <div className="mb-14 md:mb-16 lg:mb-20">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-tight tracking-wide mb-5 md:mb-6">
             Nos Séminaires
           </h2>
-          <p className="text-sm md:text-base lg:text-lg text-gray-600 font-light max-w-2xl">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 font-light max-w-3xl">
             {t('subtitle')}
           </p>
         </div>
 
         {/* Formations Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 mb-14 md:mb-16">
           {formations.map((formation, index) => (
             <FormationCard
               key={formation.id}
@@ -60,10 +60,10 @@ export default function FormationsSection() {
         </div>
 
         {/* View All Button */}
-        <div className="text-center">
+        <div className="text-center pt-4">
           <Link
             href={`/${locale}/formations`}
-            className="inline-block border border-gray-900 text-gray-900 px-8 md:px-10 py-3 md:py-4 text-xs md:text-sm font-light tracking-widest uppercase hover:bg-gray-900 hover:text-white transition-all duration-300"
+            className="inline-block border-2 border-gray-900 text-gray-900 px-8 sm:px-10 md:px-12 py-4 md:py-5 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-gray-900 hover:text-white transition-all duration-300"
           >
             Voir tous les séminaires
           </Link>

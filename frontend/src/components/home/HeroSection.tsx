@@ -11,12 +11,12 @@ export default function HeroSection() {
   const { ref, isVisible } = useScrollAnimation(0.2);
 
   return (
-    <section className="min-h-screen snap-start flex items-center justify-center">
-      <div className="container mx-auto px-4 md:px-8 lg:px-16">
+    <section className="min-h-screen snap-start flex items-center justify-center py-16 md:py-0">
+      <div className="container mx-auto px-6 md:px-8 lg:px-16">
         {/* Centered Image Container */}
         <div ref={ref} className="relative max-w-6xl mx-auto">
           {/* Image with Overlay */}
-          <div className="relative aspect-[4/3] md:aspect-[16/10] lg:aspect-[16/9] overflow-hidden" style={{ backgroundColor: 'rgb(231, 227, 216)' }}>
+          <div className="relative aspect-[3/4] sm:aspect-[4/3] md:aspect-[16/10] lg:aspect-[16/9] overflow-hidden" style={{ backgroundColor: 'rgb(231, 227, 216)' }}>
             <motion.div
               className="absolute inset-0"
               initial={{ clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)' }}
@@ -39,18 +39,18 @@ export default function HeroSection() {
 
             {/* Content on Image */}
             <motion.div
-              className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 md:px-8 lg:px-12"
+              className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6 sm:px-8 md:px-12 lg:px-16"
               initial={{ opacity: 0, y: 20 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.8, ease: 'easeOut' }}
             >
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light mb-6 md:mb-8 lg:mb-10 leading-tight tracking-wide max-w-4xl">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light mb-8 md:mb-10 lg:mb-12 leading-snug tracking-wide max-w-4xl px-2">
                 Voyagez, Apprenez, Déduisez:<br className="hidden sm:block" />
                 <span className="sm:inline"> </span>Vos vacances deviennent formatrices!
               </h1>
               <Link
                 href={`/${locale}/formations`}
-                className="inline-block border-2 border-white text-white px-6 md:px-10 lg:px-12 py-3 md:py-4 text-xs md:text-sm font-bold tracking-widest uppercase hover:bg-white hover:text-gray-900 transition-all duration-300"
+                className="inline-block border-2 border-white text-white px-8 sm:px-10 md:px-12 lg:px-14 py-4 md:py-5 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-white hover:text-gray-900 transition-all duration-300"
               >
                 NOS DESTINATIONS
               </Link>
