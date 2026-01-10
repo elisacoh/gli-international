@@ -1,5 +1,5 @@
 import createMiddleware from 'next-intl/middleware';
-import { locales, defaultLocale } from './i18n';
+import { locales, defaultLocale } from '../i18n/request';
 
 export default createMiddleware({
   // A list of all locales that are supported
@@ -7,6 +7,9 @@ export default createMiddleware({
 
   // Used when no locale matches
   defaultLocale,
+
+  // Enable automatic locale detection from Accept-Language header
+  localeDetection: true,
 
   // Always use locale prefix
   localePrefix: 'always',
