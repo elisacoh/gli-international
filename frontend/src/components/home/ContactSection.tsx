@@ -39,21 +39,21 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="min-h-screen snap-start flex items-center py-20 md:py-24" style={{backgroundColor: 'rgb(231, 227, 216)'}}>
+    <section className="h-screen flex items-center py-12" style={{backgroundColor: 'rgb(231, 227, 216)'}}>
       <div className="w-full px-6 md:px-8 lg:px-16">
         {/* Section Header */}
-        <div className="mb-14 md:mb-16 lg:mb-20 max-w-4xl">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-tight tracking-wide mb-5 md:mb-6">
+        <div className="mb-8 md:mb-10 max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 leading-tight tracking-wide mb-3 md:mb-4">
             {t('title')}
           </h2>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 font-light">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light">
             {t('subtitle')}
           </p>
         </div>
 
-        <div className="max-w-3xl">
+        <div className="max-w-2xl">
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="space-y-7 md:space-y-8">
+          <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
             <div>
               <input
                 type="text"
@@ -62,8 +62,8 @@ export default function ContactSection() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-0 py-4 md:py-5 border-0 border-b-2 border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light text-base md:text-lg"
-                placeholder="Nom complet"
+                className="w-full px-0 py-3 md:py-4 border-0 border-b-2 border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light text-sm md:text-base"
+                placeholder={t('name')}
               />
             </div>
 
@@ -75,8 +75,8 @@ export default function ContactSection() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-0 py-4 md:py-5 border-0 border-b-2 border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light text-base md:text-lg"
-                placeholder="Email"
+                className="w-full px-0 py-3 md:py-4 border-0 border-b-2 border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light text-sm md:text-base"
+                placeholder={t('email')}
               />
             </div>
 
@@ -87,24 +87,24 @@ export default function ContactSection() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                rows={5}
-                className="w-full px-0 py-4 md:py-5 border-0 border-b-2 border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light resize-none text-base md:text-lg"
-                placeholder="Message"
+                rows={4}
+                className="w-full px-0 py-3 md:py-4 border-0 border-b-2 border-gray-300 focus:border-gray-900 focus:ring-0 transition-colors bg-transparent text-gray-900 placeholder-gray-400 font-light resize-none text-sm md:text-base"
+                placeholder={t('message')}
               />
             </div>
 
-            <div className="pt-4">
+            <div className="pt-3">
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="border-2 border-gray-900 text-gray-900 px-8 sm:px-10 md:px-12 py-4 md:py-5 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-gray-900 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="border-2 border-gray-900 text-gray-900 px-6 sm:px-8 md:px-10 py-3 md:py-4 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-gray-900 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Envoi...' : t('send')}
+                {isSubmitting ? t('sending') : t('send').toUpperCase()}
               </button>
             </div>
 
             {submitSuccess && (
-              <div className="text-green-700 font-light text-base md:text-lg">
+              <div className="text-green-700 font-light text-sm md:text-base">
                 {t('success')}
               </div>
             )}
