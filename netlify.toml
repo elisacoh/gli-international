@@ -3,20 +3,28 @@
   command = "npm run build"
   publish = ".next"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  included_files = ["netlify/functions/**"]
+
+#[[plugins]]
+#  package = "@netlify/plugin-nextjs"
 
 [build.environment]
   NODE_VERSION = "18"
 
 # Redirects for internationalization
-[[redirects]]
-  from = "/"
-  to = "/fr"
-  status = 302
-  force = false
+# Disabled: Middleware now handles automatic locale detection based on browser language
+# [[redirects]]
+#   from = "/"
+#   to = "/fr"
+#   status = 302
+#   force = false
 
-[[redirects]]
-  from = "/*"
-  to = "/:splat"
-  status = 200
+#[[redirects]]
+#  from = "/*"
+#  to = "/:splat"
+#  status = 200
+#
+
