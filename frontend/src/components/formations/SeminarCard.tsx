@@ -23,6 +23,8 @@ interface Destination {
 }
 
 interface SeminarCardProps {
+  id:number;
+  title: string;
   destination: Destination;
   locale: string;
   filterStartDate?: string;
@@ -74,7 +76,7 @@ export default function SeminarCard({ destination, locale, filterStartDate, filt
 
   return (
     <Link href={detailUrl}>
-      <div className="group bg-white overflow-hidden transition-all duration-300 hover:shadow-xl">
+      <div className="group bg-white overflow-hidden transition-all duration-300 hover:shadow-xl cursor-pointer">
         {/* Image Container */}
         <div className="relative aspect-[4/3] overflow-hidden">
           <img
