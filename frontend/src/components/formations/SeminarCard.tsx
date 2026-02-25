@@ -23,8 +23,8 @@ interface Destination {
 }
 
 interface SeminarCardProps {
-  id:number;
-  title: string;
+  id:string;
+  title: Record<string,string>;
   destination: Destination;
   locale: string;
   filterStartDate?: string;

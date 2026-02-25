@@ -162,6 +162,8 @@ export default function FormationsClient({ formationsData, locale }: FormationsC
           {filteredDestinations.map((destination) => (
             <SeminarCard
               key={destination.id}
+              id={destination.seminar.id}
+              title={destination.seminar.title}
               destination={destination}
               locale={locale}
               filterStartDate={startDate}

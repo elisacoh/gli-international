@@ -105,18 +105,21 @@ export default function PromoCodeForm({ promoCode, onSuccess, onCancel }: PromoC
   };
 
   return (
-    <div className="bg-white p-8 transition-all duration-300">
-      <h2 className="text-2xl font-light text-gray-900 tracking-wide mb-8">
-        {promoCode ? 'Modifier le code promo' : 'Nouveau code promo'}
-      </h2>
+    <div className="bg-white transition-all duration-300">
+      <div className="p-8 border-b border-gray-200">
+        <h2 className="text-2xl font-light text-gray-900 tracking-wide">
+          {promoCode ? 'Modifier le code promo' : 'Nouveau code promo'}
+        </h2>
+      </div>
 
-      {error && (
-        <div className="mb-6 bg-red-50 border border-red-300 text-red-700 px-4 py-3 font-light tracking-wide">
-          {error}
-        </div>
-      )}
+      <div className="max-h-[70vh] overflow-y-auto p-8">
+        {error && (
+          <div className="mb-6 bg-red-50 border border-red-300 text-red-700 px-4 py-3 font-light tracking-wide">
+            {error}
+          </div>
+        )}
 
-      <form onSubmit={handleSubmit} className="space-y-8">
+        <form onSubmit={handleSubmit} className="space-y-8">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {/* Code */}
           <div>
@@ -359,7 +362,8 @@ export default function PromoCodeForm({ promoCode, onSuccess, onCancel }: PromoC
             {loading ? 'Sauvegarde...' : promoCode ? 'Mettre à jour' : 'Créer'}
           </button>
         </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 }

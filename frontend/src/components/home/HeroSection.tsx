@@ -57,7 +57,7 @@ export default function HeroSection() {
               </h1>
               <Link
                 href={`/${locale}/formations`}
-                className="inline-block border-2 border-white text-white px-6 sm:px-8 md:px-10 py-3 md:py-4 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-white hover:text-gray-900 transition-all duration-300"
+                className="inline-block border-2 border-white text-white px-6 sm:px-8 md:px-10 py-3 md:py-4 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-white hover:text-gray-900 transition-all duration-300 cursor-pointer"
               >
                 {t('cta').toUpperCase()}
               </Link>

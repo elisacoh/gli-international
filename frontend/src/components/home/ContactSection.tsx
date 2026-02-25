@@ -97,7 +97,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="border-2 border-gray-900 text-gray-900 px-6 sm:px-8 md:px-10 py-3 md:py-4 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-gray-900 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="border-2 border-gray-900 text-gray-900 px-6 sm:px-8 md:px-10 py-3 md:py-4 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-gray-900 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
               >
                 {isSubmitting ? t('sending') : t('send').toUpperCase()}
               </button>

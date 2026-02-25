@@ -160,7 +160,7 @@ export default function SeminarForm({ seminar, onSuccess, onCancel }: SeminarFor
   };
 
   return (
-    <div className="bg-white p-8 transition-all duration-300">
+    <div className="bg-white p-8 transition-all duration-300 max-h-[80vh] overflow-y-auto">
       <h2 className="text-2xl font-light text-gray-900 tracking-wide mb-8">
         {seminar ? 'Modifier le séminaire' : 'Nouveau séminaire'}
       </h2>

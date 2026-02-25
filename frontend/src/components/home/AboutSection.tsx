@@ -41,7 +41,7 @@ export default function AboutSection() {
             <div className="pt-2">
               <Link
                 href={`/${locale}/about`}
-                className="inline-block border-2 border-black text-black px-6 sm:px-8 md:px-10 py-3 md:py-4 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all duration-300"
+                className="inline-block border-2 border-black text-black px-6 sm:px-8 md:px-10 py-3 md:py-4 text-xs sm:text-sm font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all duration-300 cursor-pointer"
               >
                 {t('cta').toUpperCase()}
               </Link>

@@ -54,9 +54,9 @@ export default function SeminarList({ seminars, onEdit, onDelete, onToggleActive
   };
 
   return (
-    <div className="bg-white overflow-hidden transition-all duration-300">
+    <div className="bg-white overflow-hidden transition-all duration-300 max-h-[80vh] flex flex-col">
       {/* Filters */}
-      <div className="border-b border-gray-200 px-6 py-4" style={{backgroundColor: 'rgb(251, 249, 244)'}}>
+      <div className="border-b border-gray-200 px-6 py-4 flex-shrink-0" style={{backgroundColor: 'rgb(251, 249, 244)'}}>
         <div className="flex items-center justify-between gap-4">
           {/* Status Filter Tabs */}
           <nav className="-mb-px flex space-x-8" aria-label="Tabs">
@@ -95,7 +95,7 @@ export default function SeminarList({ seminars, onEdit, onDelete, onToggleActive
       </div>
 
       {/* Table */}
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto overflow-y-auto flex-1">
         <table className="min-w-full divide-y divide-gray-200">
           <thead style={{backgroundColor: 'rgb(245, 243, 236)'}}>
             <tr>

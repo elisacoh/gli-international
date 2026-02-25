@@ -14,6 +14,34 @@ const localeFlags = {
   en: '🇬🇧',
 };
 
+// Mapping for pages with different URLs per locale
+const pageTranslations: Record<string, Record<string, string>> = {
+  '/conditions-generales-de-vente': {
+    'en': '/terms-and-conditions',
+    'fr': '/conditions-generales-de-vente',
+  },
+  '/terms-and-conditions': {
+    'fr': '/conditions-generales-de-vente',
+    'en': '/terms-and-conditions',
+  },
+  '/politique-de-confidentialite': {
+    'en': '/privacy-policy',
+    'fr': '/politique-de-confidentialite',
+  },
+  '/privacy-policy': {
+    'fr': '/politique-de-confidentialite',
+    'en': '/privacy-policy',
+  },
+  '/mentions-legales': {
+    'en': '/legal-notice',
+    'fr': '/mentions-legales',
+  },
+  '/legal-notice': {
+    'fr': '/mentions-legales',
+    'en': '/legal-notice',
+  },
+};
+
 export default function LocaleSelector() {
   const params = useParams();
   const pathname = usePathname();
@@ -26,8 +54,14 @@ export default function LocaleSelector() {
     // Remove current locale from pathname
     const pathWithoutLocale = pathname.replace(`/${currentLocale}`, '');
 
+    // Check if this page has a translation mapping
+    let translatedPath = pathWithoutLocale;
+    if (pageTranslations[pathWithoutLocale]) {
+      translatedPath = pageTranslations[pathWithoutLocale][newLocale] || pathWithoutLocale;
+    }
+
     // Build new path with new locale
-    const newPath = `/${newLocale}${pathWithoutLocale}`;
+    const newPath = `/${newLocale}${translatedPath}`;
 
     // Navigate to new locale
     // This will also update the cookie automatically
